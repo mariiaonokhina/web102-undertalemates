@@ -6,7 +6,7 @@
 .sidebar-container {
   background-color: antiquewhite;
   position: fixed;
-  width: 20vw;
+  width: 16vw;
   height: 100vh;
   list-style-type: none;
   display: flex;
@@ -22,13 +22,13 @@
   text-align: center;
 }
 
-.App {
+.App, .create-screen-container, .gallery-screen-container {
   background-color: black;
   color: white;
   position: relative;
-  width: 80vw;
+  width: 84vw;
   height: 100vh;
-  left: 20vw;
+  left: 16vw;
   display: flex;
   flex-direction: column;
   place-items: center;
@@ -37,4 +37,23 @@
 
 .all-chars-img {
   height: 60vh;
+}
+
+.create-screen-img {
+  height: 25vh;
+}
+
+.card-container {
+  height: fit-content;
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  place-content: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.card {
+  border: 2px white solid;
+  height: 25vh;
+  width: 25vw;
 }

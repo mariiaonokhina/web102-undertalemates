@@ -12,13 +12,13 @@ const Layout = () => {
           </li>
 
           <li className="create-link sidebar-item" key="create-button">
-            <Link to="/create">
+            <Link to="/undertalemates/create">
               Create an Undertale-mate!
             </Link>
           </li>
 
           <li className="gallery-link sidebar-item" key="gallery-button">
-            <Link to="/gallery">
+            <Link to="/undertalemates/gallery">
               Gallery
             </Link>
           </li>
