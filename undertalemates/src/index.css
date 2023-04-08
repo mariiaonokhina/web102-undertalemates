@@ -5,6 +5,7 @@
 
 .sidebar-container {
   background-color: antiquewhite;
+  position: fixed;
   width: 20vw;
   height: 100vh;
   list-style-type: none;
@@ -12,7 +13,6 @@
   flex-direction: column;
   place-items: center;
   justify-content: space-evenly;
-  
 }
 
 .sidebar-item {
@@ -20,4 +20,21 @@
   height: fit-content;
   font-size: x-large;
   text-align: center;
+}
+
+.App {
+  background-color: black;
+  color: white;
+  position: relative;
+  width: 80vw;
+  height: 100vh;
+  left: 20vw;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  justify-content: space-evenly;
+}
+
+.all-chars-img {
+  height: 60vh;
 }
