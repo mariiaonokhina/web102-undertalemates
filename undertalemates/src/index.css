@@ -52,15 +52,24 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-.card-link {
+
+.card-outside-container {
   border: 2px white solid;
   height: 25vh;
   width: 25vw;
 }
 
+/*  */
+/*  */
+/*  */
 .details-inner-wrapper {
   position: relative;
   left: 500px;
   background-color: aqua;
   color: black;
+}
+
+.edit-inner-wrapper {
+  position: relative;
+  left: 200px;
 }

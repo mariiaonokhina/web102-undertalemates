@@ -7,6 +7,7 @@ import Layout from './routes/Layout';
 import CreateScreen from './routes/CreateScreen';
 import Gallery from './routes/Gallery';
 import DetailPage from './routes/DetailPage'
+import EditPage from './routes/EditPage';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -16,7 +17,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route index={false} path='/undertalemates/create/' element={<CreateScreen />} />
 
         <Route index={false} path='/undertalemates/gallery/' element={<Gallery />} />
-        <Route index={false} path="/undertalemates/gallery/:name" element={<DetailPage />} exact />
+        <Route index={false} path="/undertalemates/gallery/:name" element={<DetailPage />} />
+        <Route index={false} path="/undertalemates/gallery/:name/edit" element={<EditPage />} exact />
 
       </Route>
     </Routes>

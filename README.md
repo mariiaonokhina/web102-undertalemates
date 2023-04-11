@@ -4,7 +4,7 @@ Submitted by: **Mariia Onokhina**
 
 This web app: **insert description**
 
-Time spent: **7** hours spent in total
+Time spent: **10** hours spent in total
 
 ## Required Features
 
