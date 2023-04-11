@@ -12,7 +12,6 @@ const Gallery = () => {
     
         // set state of posts
         setEntries(data);
-        console.log(data)
     }
 
     useEffect(() => {

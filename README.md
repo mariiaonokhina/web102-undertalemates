@@ -4,7 +4,7 @@ Submitted by: **Mariia Onokhina**
 
 This web app: **insert description**
 
-Time spent: **5** hours spent in total
+Time spent: **7** hours spent in total
 
 ## Required Features
 
@@ -12,9 +12,9 @@ The following **required** functionality is completed:
 
 - [X] **A create form allows users to add new cremates**
 - [X] **Users can name the crewmate and set the crewmate's attributes by clicking on one of several values**
-- [ ] **The site displays a summary page of all the user's added crewmates**
+- [X] **The site displays a summary page of all the user's added crewmates**
 - [ ] **A previously created crewmate can be updated and deleted from the crewmate list**
-- [ ] **Each crewmate has a direct, unique link to an info page about them**
+- [X] **Each crewmate has a direct, unique link to an info page about them**
 
 The following **optional** features are implemented:
 
