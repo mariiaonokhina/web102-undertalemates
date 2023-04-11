@@ -24,19 +24,21 @@ const CreateScreen = () => {
             alert('Please, fill out your age.');
         }
 
+        else if (entry.age < 0) {
+            alert('The age needs to be a positive number.');
+        }
+
         else if (entry.mood == null) {
             alert('Please, fill out your mood.');
         }
 
         else {
-            entry.mood == entry.mood.toLowerCase();
-
             await supabase
             .from('Undertalemates')
             .insert({name: entry.name, character: entry.character, age: entry.age, mood: entry.mood})
             .select();
 
-            window.location = "/undertalemates/";
+            window.location = "/undertalemates/gallery";
         }
     }
 
@@ -59,19 +61,19 @@ const CreateScreen = () => {
                 <input className="create-char-input" name='name' type='text' onChange={handleChange}></input>
 
                 <label htmlFor='character'>Character: </label>
-                <select className='create-char-input' name='character' onChange={handleChange} defaultValue={'none'}>
-                    <option value='none' disabled hidden>Select a character</option>
-                    <option value='frisk'>Frisk</option>
-                    <option value='chara'>Chara</option>
-                    <option value='flowey'>Flowey</option>
-                    <option value='toriel'>Toriel</option>
-                    <option value='sans'>Sans</option>
-                    <option value='papyrus'>Papyrus</option>
-                    <option value='napstablook'>Napstablook</option>
-                    <option value='asriel'>Asriel</option>
-                    <option value='mettaton'>Mettaton</option>
-                    <option value='temmy'>Temmy</option>
-                    <option value='asgore'>Asgore</option>
+                <select className='create-char-input' name='character' onChange={handleChange} defaultValue={'None'}>
+                    <option value='None' disabled hidden>Select a character</option>
+                    <option value='Frisk'>Frisk</option>
+                    <option value='Chara'>Chara</option>
+                    <option value='Flowey'>Flowey</option>
+                    <option value='Toriel'>Toriel</option>
+                    <option value='Sans'>Sans</option>
+                    <option value='Papyrus'>Papyrus</option>
+                    <option value='Napstablook'>Napstablook</option>
+                    <option value='Asriel'>Asriel</option>
+                    <option value='Mettaton'>Mettaton</option>
+                    <option value='Temmy'>Temmy</option>
+                    <option value='Asgore'>Asgore</option>
                 </select>
 
                 <label htmlFor='age'>Age: </label>
