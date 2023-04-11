@@ -57,7 +57,7 @@ const EditPage = () => {
             await supabase
             .from('Undertalemates')
             .update({name: entry.name, character: entry.character, age: entry.age, mood: entry.mood})
-            .eq(`name`, `${params.name}`)
+            .eq('name', `${details.name}`)
             .select()
 
             setDetails({name: entry.name, character: entry.character, age: entry.age, mood: entry.mood})
@@ -73,6 +73,15 @@ const EditPage = () => {
             [event.target.age]: event.target.value, 
             [event.target.mood]: event.target.value
         })
+    }
+
+    const deleteEntry = async() => {
+        const { error } = await supabase
+        .from('Undertalemates')
+        .delete()
+        .eq('name', `${details.name}`)
+
+        window.location = "/undertalemates/gallery";
     }
 
     return (
@@ -119,7 +128,7 @@ const EditPage = () => {
 
                         <div className="update-btn-div">
                             <button className='update-btn' type='submit'>Update Undertale-<i>mate</i></button>
-                            <button className='delete-btn' type='submit'>Delete Undertale-<i>mate</i></button>
+                            <button className='delete-btn' type='button' onClick={deleteEntry}>Delete Undertale-<i>mate</i></button>
                         </div>
                     </form>
                 </div>
