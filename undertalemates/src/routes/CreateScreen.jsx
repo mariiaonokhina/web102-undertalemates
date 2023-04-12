@@ -38,7 +38,7 @@ const CreateScreen = () => {
             .insert({name: entry.name, character: entry.character, age: entry.age, mood: entry.mood})
             .select();
 
-            window.location = "/undertalemates/gallery";
+            window.location = "/web102-undertalemates/gallery";
         }
     }
 
