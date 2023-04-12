@@ -12,13 +12,13 @@ import EditPage from './routes/EditPage';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     <Routes>
-      <Route path='/undertalemates/' element={<Layout />} >
+      <Route path='/web102-undertalemates/' element={<Layout />} >
         <Route index={true} path='' element={<App />} />
-        <Route index={false} path='/undertalemates/create/' element={<CreateScreen />} />
+        <Route index={false} path='/web102-undertalemates/create/' element={<CreateScreen />} />
 
-        <Route index={false} path='/undertalemates/gallery/' element={<Gallery />} />
-        <Route index={false} path="/undertalemates/gallery/:name" element={<DetailPage />} />
-        <Route index={false} path="/undertalemates/gallery/:name/edit" element={<EditPage />} exact />
+        <Route index={false} path='/web102-undertalemates/gallery/' element={<Gallery />} />
+        <Route index={false} path="/web102-undertalemates/gallery/:name" element={<DetailPage />} />
+        <Route index={false} path="/web102-undertalemates/gallery/:name/edit" element={<EditPage />} exact />
 
       </Route>
     </Routes>

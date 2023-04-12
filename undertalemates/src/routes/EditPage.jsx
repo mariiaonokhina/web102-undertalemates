@@ -62,7 +62,7 @@ const EditPage = () => {
 
             setDetails({name: entry.name, character: entry.character, age: entry.age, mood: entry.mood})
 
-            window.location = "/undertalemates/gallery";
+            window.location = "/web102-undertalemates/gallery";
         }
     }
 
@@ -81,7 +81,7 @@ const EditPage = () => {
         .delete()
         .eq('name', `${details.name}`)
 
-        window.location = "/undertalemates/gallery";
+        window.location = "/web102-undertalemates/gallery";
     }
 
     return (
