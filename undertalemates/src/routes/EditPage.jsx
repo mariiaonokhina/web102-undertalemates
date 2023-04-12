@@ -131,6 +131,7 @@ const EditPage = () => {
                             <button className='delete-btn' type='button' onClick={deleteEntry}>Delete Undertale-<i>mate</i></button>
                         </div>
                     </form>
+                    <img id='frisk-and-toriel-img' src='/frisk_and_toriel.png'></img>
                 </div>
                 : ''}
         </div>

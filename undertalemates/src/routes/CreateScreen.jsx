@@ -71,8 +71,8 @@ const CreateScreen = () => {
                     <option value='Papyrus'>Papyrus</option>
                     <option value='Napstablook'>Napstablook</option>
                     <option value='Asriel'>Asriel</option>
-                    <option value='Mettaton'>Mettaton</option>
-                    <option value='Temmy'>Temmy</option>
+                    <option value='Annoying Dog'>Annoying Dog</option>
+                    <option value='Temmie'>Temmie</option>
                     <option value='Asgore'>Asgore</option>
                 </select>
 
@@ -83,7 +83,6 @@ const CreateScreen = () => {
                 <input className="create-char-input"
                         name='mood' 
                         type='text' 
-                        placeholder="Angry, happy, etc..." 
                         onChange={handleChange}
                 ></input>
 

@@ -20,9 +20,10 @@ const Gallery = () => {
 
     return (
         <div className="gallery-screen-container">
-                <h1>Gallery</h1>
+                <h1 id='gallery-title'>Gallery</h1>
+                {entries.length == 0? <h1>¯\_(ツ)_/¯ <br></br> Nothing yet</h1>: ''}
 
-                <div className="card-container">
+                <div className="gallery-card-container">
                     {entries && Object.entries(entries).map(([entry]) => 
                         <Card key={entries[entry].name} userName={entries[entry].name} character={entries[entry].character} age={entries[entry].age} mood={entries[entry].mood} />
                     )}

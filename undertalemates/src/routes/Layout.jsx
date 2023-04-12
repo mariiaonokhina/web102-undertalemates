@@ -6,19 +6,19 @@ const Layout = () => {
       <nav>
         <ul className="sidebar-container">
           <li className="home-link sidebar-item" key="home-button">
-            <Link to="/undertalemates/">
+            <Link className='link-item' to="/undertalemates/">
               Home
             </Link>
           </li>
 
           <li className="create-link sidebar-item" key="create-button">
-            <Link to="/undertalemates/create">
+            <Link className='link-item' to="/undertalemates/create">
               Create an Undertale-mate!
             </Link>
           </li>
 
           <li className="gallery-link sidebar-item" key="gallery-button">
-            <Link to="/undertalemates/gallery">
+            <Link className='link-item' to="/undertalemates/gallery">
               Gallery
             </Link>
           </li>

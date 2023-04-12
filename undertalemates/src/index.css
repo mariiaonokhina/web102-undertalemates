@@ -3,6 +3,34 @@
   padding: 0;
 }
 
+body {
+  background-color: black;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+}
+
+p, label, h3, h2, a {
+  font-family: 'Merriweather', serif;
+}
+
+.link-item {
+  text-decoration: none;
+}
+
+.link-item:hover {
+  color: rgb(147, 37, 210) !important;
+}
+
+.link-item:active {
+  color: rgb(105, 38, 143) !important;
+}
+
+.link-item:visited {
+  color: black;
+}
+
 .sidebar-container {
   background-color: antiquewhite;
   position: fixed;
@@ -22,7 +50,7 @@
   text-align: center;
 }
 
-.App, .create-screen-container, .gallery-screen-container {
+.App, .create-screen-container, .gallery-screen-container, .detail-container, .edit-container {
   background-color: black;
   color: white;
   position: relative;
@@ -43,8 +71,69 @@
   height: 25vh;
 }
 
-.card-container {
-  height: fit-content;
+button, a, .link-item, select {
+  cursor: pointer;
+  width: 18vw;
+}
+
+input {
+  cursor: text;
+  width: 18vw;
+  border-radius: 10px;
+  height: 3vh;
+  padding: 0px 5px;
+  text-align: center;
+}
+
+select {
+  border-radius: 10px;
+  height: 3vh;
+  text-align: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  height: 38vh;
+  place-items: center;
+  justify-content: space-evenly;
+}
+
+.create-btn, .update-btn, .delete-btn {
+  background-color: rgb(147, 37, 210);
+  color: white;
+  border-radius: 8px;
+  border: 2px black solid;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+  font-size: large;
+  margin-top: 2vh;
+  padding: 1vh;
+  text-align: center;
+  transition: 220ms all ease-in-out;
+}
+
+.create-btn:hover, .update-btn:hover, .delete-btn:hover {
+  background-color: rgb(105, 38, 143);
+}
+
+.create-btn:focus, .update-btn:focus, .delete-btn:focus {
+  outline-style: solid;
+  outline-color: transparent;
+}
+
+.create-btn:active, .update-btn:active, .delete-btn:active {
+  transform: scale(105%);
+}
+
+.gallery-screen-container {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  height: 100%;
+}
+
+.gallery-card-container {
   width: 80vw;
   display: flex;
   flex-direction: row;
@@ -53,23 +142,95 @@
   flex-wrap: wrap;
 }
 
-.card-outside-container {
+.card-inside-container {
+  margin: 1vh;
+  text-align: center;
+  padding: 2vh 0vh;
   border: 2px white solid;
-  height: 25vh;
-  width: 25vw;
+  height: 38vh;
+  width: 35vw;
 }
 
-/*  */
-/*  */
-/*  */
+.char-img-small {
+  max-width: 15vw;
+  max-height: 15vh;
+}
+
+.card-item {
+  margin-bottom: 1vh;
+}
+
+.action-div {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1vh;
+}
+
+.card-link-details, .card-link-edit, .card-link-details:visited, .card-link-edit:visited {
+  color: white;
+  text-decoration: underline;
+}
+
+.detail-container {
+  padding-top: 3vh;
+  height: 100%;
+  width: 84vw;
+}
+
 .details-inner-wrapper {
-  position: relative;
-  left: 500px;
-  background-color: aqua;
-  color: black;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  text-align: center;
+}
+
+#details-name, #details-character, #details-mood, #details-age {
+  margin-bottom: 2vh;
+}
+
+.description-h3 {
+  width: 80%;
+  line-height: 1.5;
+  margin-bottom: 1vh;
+}
+
+.char-img-big {
+  margin-top: 1vh;
+  max-height: 50%;
+  max-width: 30%;
 }
 
 .edit-inner-wrapper {
-  position: relative;
-  left: 200px;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  justify-content: space-evenly;
+}
+
+.curr-info-wrapper {
+  text-align: center;
+  margin: 1vh 0;
+}
+
+.form-container {
+  margin-top: 1vh;
+  height: 42vh;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  justify-content: space-evenly;
+}
+
+.update-btn-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.update-btn, .delete-btn {
+  width: 100%;
+  padding: 0.5vh;
+}
+
+#frisk-and-toriel-img {
+  max-width: 35vh;
 }
