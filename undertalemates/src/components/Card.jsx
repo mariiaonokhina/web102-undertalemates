@@ -24,8 +24,8 @@ const Card = ({userName, character, age, mood}) => {
             <h3 className='card-item'>Age: {age}</h3>
             <h3 className='card-item'>Mood: {mood}</h3>
             <div className='action-div'>
-                <Link className='card-link-details link-item' to={`/undertalemates/gallery/${userName}`} >View details</Link>
-                <Link className='card-link-edit link-item' to={`/undertalemates/gallery/${userName}/edit`} >Edit</Link>
+                <Link className='card-link-details link-item' to={`/web102-undertalemates/gallery/${userName}`} >View details</Link>
+                <Link className='card-link-edit link-item' to={`/web102-undertalemates/gallery/${userName}/edit`} >Edit</Link>
             </div>
         </div>
     )
