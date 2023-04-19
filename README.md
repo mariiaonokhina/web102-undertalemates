@@ -4,6 +4,8 @@ Submitted by: **Mariia Onokhina**
 
 This web app: **utilizes CRUD operations using Supabase to create, fetch, update, and delete game characters.**
 
+Hosted at: **https://undertalemates.netlify.app/**
+
 Time spent: **15** hours spent in total
 
 ## Required Features
